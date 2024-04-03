@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@capacitor/core": "^5.7.4",
+    "@ionic/pwa-elements": "^3.2.2",
     "@pinia/nuxt": "^0.5.1",
     "firebase": "^10.10.0",
     "nuxt": "^3.11.1",

@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     // https://nuxt.com/modules/pinia-plugin-persistedstate
     '@pinia-plugin-persistedstate/nuxt',
+    
   ],
   ssr: false,
   pwa: {
