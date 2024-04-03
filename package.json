@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@capacitor/core": "^5.7.4",
+    "@capacitor/device": "5.0.7",
     "@ionic/pwa-elements": "^3.2.2",
     "@pinia/nuxt": "^0.5.1",
     "firebase": "^10.10.0",
@@ -25,6 +26,7 @@
     "@capacitor/cli": "5.7.4",
     "@nuxt/eslint-config": "^0.2.0",
     "@nuxtjs/ionic": "^0.13.1",
+    "@nuxtjs/tailwindcss": "^6.11.4",
     "@pinia-plugin-persistedstate/nuxt": "^1.2.0",
     "@prettier/plugin-pug": "^3.0.0",
     "@typescript-eslint/eslint-plugin": "^7.4.0",

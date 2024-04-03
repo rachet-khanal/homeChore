@@ -7,7 +7,8 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     // https://nuxt.com/modules/pinia-plugin-persistedstate
     '@pinia-plugin-persistedstate/nuxt',
-    
+    // https://tailwindcss.nuxtjs.org/getting-started/installation
+    '@nuxtjs/tailwindcss',
   ],
   ssr: false,
   pwa: {
@@ -34,6 +35,18 @@ export default defineNuxtConfig({
         messagingSenderId: "",
         appId: "",
       }
+    }
+  },
+  ionic: {
+    // https://ionic.nuxtjs.org/get-started/configuration
+    integrations: {
+      //
+    },
+    css: {
+      //
+    },
+    config: {
+      //
     }
   },
 });
