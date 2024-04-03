@@ -1,0 +1,7 @@
+{
+  "name": "home-chore",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}

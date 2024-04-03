@@ -1,0 +1,10 @@
+{
+  "appId": "np.com.rachet.home.chore",
+  "appName": "home-chore",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https",
+    "url": "http://192.168.20.5:3000/",
+    "cleartext": true
+  }
+}
