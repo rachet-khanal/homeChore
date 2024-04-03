@@ -2,7 +2,7 @@
 const authStore = useAuthStore()
 const {user} = storeToRefs(authStore)
 
-const startLink = computed(() => user.value ? '/welcome': '/login')
+const startLink = computed(() => user.value ? '/tabs/welcome': '/login')
 </script>
 
 <template lang="pug">

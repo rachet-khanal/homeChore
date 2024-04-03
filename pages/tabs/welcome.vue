@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import {Device} from '@capacitor/device'
 
-const info = await Device.getInfo()
+const deviceInfo = ref({})
+
+onMounted(async () => deviceInfo.value = await Device.getInfo())
 
 </script>
 
@@ -14,11 +16,10 @@ IonPage
       p(class="mb-3") Get ready to put your cleaning gloves on!!!
       IonButton(router-link="/" shape="round" size="small" color="danger" class="mb-3") 
         span(class="px-2 py-3") Back To Start
-        IonIcon(slot="start"  :icon="ioniconsHome")
+        IonIcon(slot="start" :icon="ioniconsHome")
       IonCard
         IonCardHeader 
           IonCardTitle() Device Info
         IonCardContent
-          pre {{  info  }}
-
+          pre {{  deviceInfo  }}
 </template>
