@@ -1,10 +1,15 @@
 <script setup lang="ts">
 const authStore = useAuthStore()
-const {user} = storeToRefs(authStore)
+const { user } = storeToRefs(authStore)
+const props = withDefaults(defineProps<{hasBackBtn?: boolean}>(), {
+  hasBackBtn: false
+})
 </script>
 <template lang="pug">
 IonHeader()
   IonToolbar
+    IonButtons(slot="start")
+      IonBackButton(defaultHref="/" v-if="hasBackBtn")
     IonTitle Home Chores
     IonButtons(slot="end")
       IonButton(

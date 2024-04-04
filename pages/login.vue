@@ -24,6 +24,9 @@ const confirmLogin = async () => {
     return console.error('Confirmation Failed')
   }
   await verifyOTP(confirmation.value, otp.value)
+  if (user.value) {
+        router.push('/tabs/welcome')
+      }
 }
 
 onMounted(() => {
@@ -32,11 +35,12 @@ onMounted(() => {
   })
 })
 
-watchEffect(() =>{
-  if(user.value){
-    router.push('/welcome')
-  }
-})
+  onIonViewWillEnter(() => {
+     if (user.value) {
+        router.push('/tabs/welcome')
+      }
+  });
+
 
 </script>
 

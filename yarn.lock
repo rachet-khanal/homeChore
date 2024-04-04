@@ -328,6 +328,11 @@
     "@babel/helper-validator-identifier" "^7.22.20"
     to-fast-properties "^2.0.0"
 
+"@capacitor/action-sheet@^5.0.7":
+  version "5.0.7"
+  resolved "https://registry.yarnpkg.com/@capacitor/action-sheet/-/action-sheet-5.0.7.tgz#4808af8c483a85f58c7fffdea76f8d374883e3a0"
+  integrity sha512-8q8fYYy9dwLi4eiDiYq+ys/uOm9C2YpjfAnlG7fYdha8QNpaz2314jR+dxsJO423zYB2Wag9NXlupHpXeGdGOA==
+
 "@capacitor/cli@5.7.4", "@capacitor/cli@^5.6.0":
   version "5.7.4"
   resolved "https://registry.yarnpkg.com/@capacitor/cli/-/cli-5.7.4.tgz#2505b1fbc82a683666098c7a85f29ab01c9eda7f"
@@ -362,6 +367,11 @@
   version "5.0.7"
   resolved "https://registry.yarnpkg.com/@capacitor/device/-/device-5.0.7.tgz#f45d74008cbd4352f3e9eb816f2f8f4a177840b4"
   integrity sha512-sTYzGktRVK6giQCsoFtw+IGkEPGmFvIwi0pfFej5TRND1UHidkNZSpgMFBbjCYPbwsqXTcR3boYPcmxvl5iuJg==
+
+"@capacitor/toast@^5.0.7":
+  version "5.0.7"
+  resolved "https://registry.yarnpkg.com/@capacitor/toast/-/toast-5.0.7.tgz#e5488c12211989dafd73236a36a59c1457b0d338"
+  integrity sha512-E2AuYXUoPPFrfwv3iC5FOeSAkVwlJpIM0w0Sw4uqLM7jvSsOEZh3z9I4/Gdz0ltY0JsQmmnfvoFYiZ1TVsbhWw==
 
 "@cloudflare/kv-asset-handler@^0.3.1":
   version "0.3.1"
