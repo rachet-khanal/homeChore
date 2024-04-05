@@ -1,7 +1,8 @@
-import { getAnalytics } from "firebase/analytics"
+import { getApps, initializeApp } from "firebase/app"
+
+// import { getAnalytics } from "firebase/analytics"
 import { getAuth } from "firebase/auth"
 import { getFirestore } from "firebase/firestore"
-import { initializeApp } from "firebase/app"
 
 export default defineNuxtPlugin((nuxtApp) => {
   const {public: publicConfig} = useRuntimeConfig()
@@ -14,10 +15,10 @@ export default defineNuxtPlugin((nuxtApp) => {
     appId: publicConfig.firebase.appId,
   }
 
-  const app = initializeApp(firebaseConfig)
+  const app = getApps()?.[0] ??initializeApp(firebaseConfig)
 
   // const analytics = getAnalytics(app)
-  const auth = getAuth(app)
+  const auth =  getAuth(app)
   const firestore = getFirestore(app)
 
   return {
