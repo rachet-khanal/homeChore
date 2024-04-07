@@ -34,6 +34,7 @@ export default defineNuxtConfig({
         storageBucket: "",
         messagingSenderId: "",
         appId: "",
+        vapidKey:"",
       }
     }
   },

@@ -20,7 +20,7 @@ export default defineNuxtPlugin((nuxtApp) => {
   Notification.requestPermission().then((permission) => {
      // Get the token for this device
     getToken(messaging, {
-        vapidKey:'BB_tea7YnKfbfhGkl88DMZzCyNGboKJaarcrSFDEZ-vW6Kcx64Kg3r4wTCv7sX3XIpp_LWsCXZnHmfXilfzjCw4'
+        vapidKey:publicConfig.firebase.vapidKey
       }).then((currentToken) => {
         if (currentToken) {
           console.log('FCM token:', currentToken);
